@@ -238,7 +238,7 @@
   .containerRight .content {
     width: 90vw;
     height: max-content;
-    padding-bottom: 4vh;
+    padding-bottom: 1vh;
   }
   .containerRight .content section .main-content {
     font-size: 1rem;
