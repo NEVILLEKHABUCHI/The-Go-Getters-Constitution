@@ -178,7 +178,6 @@
     display: flex;
     gap: 1vh;
     flex-direction: column-reverse;
-    background-color: red;
   }
   .containerTop h2{
     display: flex;
@@ -203,7 +202,7 @@
   }
   .containerBody {
     height: 87vh;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
   }
   .containerLeft {
     width: 60vw;
@@ -227,7 +226,8 @@
   }
   .containerRight {
     width: 99vw;
-    height: 87vh;
+    height: 85vh;
+    padding-bottom: 10vh;
   }
   .containerRight .content {
     width: 90vw;
