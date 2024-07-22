@@ -203,6 +203,7 @@
   }
   .containerBody {
     height: 87vh;
+    padding-bottom: 10vh;
   }
   .containerLeft {
     width: 60vw;
