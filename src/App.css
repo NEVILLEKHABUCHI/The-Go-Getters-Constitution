@@ -172,15 +172,13 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .appContainer {
-    overflow-y: scroll;
-  }
   .containerTop {
     width: 99vw;
     height: 12vh;
     display: flex;
     gap: 1vh;
     flex-direction: column-reverse;
+    background-color: red;
   }
   .containerTop h2{
     display: flex;
@@ -202,6 +200,9 @@
   .containerTop .button button #icon{
     font-size: 1.5rem;
     color: #BF5700;
+  }
+  .containerBody {
+    height: 87vh;
   }
   .containerLeft {
     width: 60vw;
