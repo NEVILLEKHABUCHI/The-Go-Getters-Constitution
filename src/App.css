@@ -172,6 +172,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .appContainer{
+    border: 1px solid blue;
+  }
   .containerTop {
     width: 99vw;
     height: 12vh;
@@ -203,6 +206,7 @@
   .containerBody{
     width: 99vw;
     height: 87vh;
+    border: 1px solid red;
   }
   .containerLeft {
     width: 60vw;
@@ -214,6 +218,7 @@
    transform: translate(-100%);
    transition: transform 0.3s ease-in-out;
    padding-bottom: 2vh;
+    border: 1px solid yellow;
   }
   .containerLeft .content {
     padding-bottom: 6vh;
@@ -230,6 +235,7 @@
   .containerRight {
     width: 99vw;
     height: 87vh;
+    border: 1px solid green;
   }
   .containerRight .content {
     width: 90vw;
