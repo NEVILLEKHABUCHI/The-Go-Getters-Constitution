@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+.appContainer {
+  width: 99vw;
+  height: 99vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerTop {
+  width: inherit;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F3F4;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.containerTop .button{
+  display: none;
+}
+.containerTop h2 span{
+  color: #BF5700;
+}
+.containerBody {
+  width: inherit;
+  height: 89vh;
+  display: flex;
+}
+.containerLeft {
+  width: 20vw;
+  height: inherit;
+  background-image: url('/public/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #BF5700;
+}
+.containerLeft h4 {
+  display: flex;
+  justify-content: center;
+  background-color: #BF5700;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.containerLeft .content {
+  width: inherit;
+  height: 85vh;
+  padding: 0 0.5vw;
+  padding-bottom: 4vh;
+  overflow-y: scroll;
+}
+.containerLeft .content::-webkit-scrollbar{
+  width: 5px;
   }
+  .containerLeft .content::-webkit-scrollbar-track{
+  background-color: #F2F3F4;
+  }
+  .containerLeft .content::-webkit-scrollbar-thumb{
+  background: #BF5700;
+  border-radius: 6px;
+  }
+  .containerLeft .content::-webkit-scrollbar-thumb:hover{
+  background-color: #BF5700;
+  }
+.containerLeft .content a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerLeft .content span{
+  color: #F4F0EC;
+}
+.containerLeft .content .nav-bar{
+  border-bottom: 1px solid #BF5700;
+  margin-bottom: 1vh;
+}
+.containerLeft .content .nav-bar button {
+  border: none;
+  cursor: pointer;
+}
+.containerLeft .content .nav-bar div:first-of-type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerLeft .content .nav-bar .nav-content {
+  display: none;
+  transition: max-height 0.3s ease-out;
+}
+.containerLeft .content .nav-bar .nav-content #sublink.show{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 2vw;
+}
+.containerLeft .content .nav-bar .nav-content.show {
+  margin-left: 3vw;
+  display: block;
+}
+.containerLeft #ownership {
+  color: #F2F3F4;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.5rem;
+}
+.containerLeft #ownership a {
+  font-family: 'Courier New', Courier, monospace;
+  color: #BF5700;
+  font-size: 0.5rem;
+}
+.containerRight {
+  width: 79vw;
+  height: inherit;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.containerRight::-webkit-scrollbar{
+  width: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .containerRight::-webkit-scrollbar-track{
+  background-color: #F2F3F4;
+  }
+  .containerRight::-webkit-scrollbar-thumb{
+  background: #BF5700;
+  border-radius: 6px;
+  }
+  .containerRight::-webkit-scrollbar-thumb:hover{
+  background-color: #BF5700;
+  }
+.containerRight .content {
+  width: 78vw;
+  height: max-content;
+  padding-bottom: 3vh;
+}
+.containerRight .content section{
+  margin-bottom: 2vh;
+}
+.containerRight .content section h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.containerRight .content section h2 span {
+  color: #BF5700;
+}
+.containerRight .content section #underline {
+  display: flex;
+  justify-content: center;
+}
+.containerRight .content section #underline span {
+  width: 10vw;
+  border: 2px solid #BF5700;
+  border-radius: 10px;
+}
+.containerRight .content section h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.containerRight .content section h3 span {
+  color: #BF5700;
+}
+.containerRight .content section .main-content{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.containerRight .content section:nth-of-type(2) .main-content{
+  display: block;
+}
+.containerRight .content section ol {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 5vw;
+}
+.containerRight .content section:nth-of-type(3) .main-content{
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .containerTop {
+    width: 99vw;
+    height: 12vh;
+    display: flex;
+    gap: 1vh;
+    flex-direction: column-reverse;
+  }
+  .containerTop h2{
+    display: flex;
+    flex-direction: column;
+  }
+  .containerTop h2 span{
+    display: flex;
+    justify-content: center;
+  }
+  .containerTop .button{
+    width: 96vw;
+    display: block;
+    display: flex;
+    justify-content: left;
+  }
+  .containerTop .button button {
+    border: none;
+  }
+  .containerTop .button button #icon{
+    font-size: 1.5rem;
+    color: #BF5700;
+  }
+  .containerLeft {
+    width: 60vw;
+    height: 87vh;
+   position: absolute;
+   top: 12vh;
+   left: 0;
+   background-color: gray;
+   transform: translate(-100%);
+   transition: transform 0.3s ease-in-out;
+  }
+  .containerLeft .content a {
+    font-size: 1.2rem;
+  }
+  .containerLeft.show {
+    transform: translateX(0);
+  }
+  .containerLeft.hide {
+    transform: translate(-100%);
+  }
+  .containerRight {
+    width: 99vw;
+    height: 87vh;
+  }
+  .containerRight .content {
+    width: 90vw;
+  }
+  .containerRight .content section .main-content {
+    font-size: 1.2rem;
+  }
+  .containerRight .content section ol{
+    font-size: 1.2rem;
   }
 }
