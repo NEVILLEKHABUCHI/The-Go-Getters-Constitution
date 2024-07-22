@@ -104,7 +104,7 @@
 }
 .containerRight {
   width: 79vw;
-  height: inherit;
+  height: 89vh;
   display: flex;
   justify-content: center;
   overflow-y: scroll;
@@ -125,7 +125,7 @@
 .containerRight .content {
   width: 78vw;
   height: max-content;
-  padding-bottom: 3vh;
+  /* padding-bottom: 3vh; */
 }
 .containerRight .content section{
   margin-bottom: 2vh;
@@ -173,7 +173,8 @@
 
 @media only screen and (max-width: 900px) {
   .appContainer{
-    border: 1px solid blue;
+    width: 99vw;
+    height: 99vh;
   }
   .containerTop {
     width: 99vw;
@@ -205,23 +206,22 @@
   }
   .containerBody{
     width: 99vw;
-    height: 87vh;
-    border: 1px solid red;
+    height: 85vh;
+    padding-bottom: 2vh;
   }
   .containerLeft {
     width: 60vw;
-    height: 87vh;
+    height: 85vh;
    position: absolute;
    top: 12vh;
    left: 0;
    background-color: gray;
    transform: translate(-100%);
    transition: transform 0.3s ease-in-out;
-   padding-bottom: 2vh;
-    border: 1px solid yellow;
+   /* padding-bottom: 2vh; */
   }
   .containerLeft .content {
-    padding-bottom: 6vh;
+    height: 82vh;
   }
   .containerLeft .content a {
     font-size: 1rem;
@@ -234,13 +234,12 @@
   }
   .containerRight {
     width: 99vw;
-    height: 87vh;
-    border: 1px solid green;
+    height: 85vh;
   }
   .containerRight .content {
     width: 90vw;
     height: max-content;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
   }
   .containerRight .content section .main-content {
     font-size: 1rem;
