@@ -10,8 +10,8 @@ body{
   align-items: center;
   overflow: hidden;
 }
-@media only screen and (max-width: 900px){
+/* @media only screen and (max-width: 900px){
   body{
     display: block;
   }
-}
+} */

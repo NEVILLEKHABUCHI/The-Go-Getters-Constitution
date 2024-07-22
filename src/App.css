@@ -200,6 +200,10 @@
     font-size: 1.5rem;
     color: #BF5700;
   }
+  .containerBody{
+    width: 99vw;
+    height: 87vh;
+  }
   .containerLeft {
     width: 60vw;
     height: 87vh;
