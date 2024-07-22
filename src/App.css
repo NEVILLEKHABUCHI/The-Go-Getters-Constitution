@@ -209,7 +209,7 @@
    background-color: gray;
    transform: translate(-100%);
    transition: transform 0.3s ease-in-out;
-   padding-bottom: 6vh;
+   padding-bottom: 5vh;
   }
   .containerLeft .content {
     padding-bottom: 6vh;
@@ -229,7 +229,7 @@
   }
   .containerRight .content {
     width: 90vw;
-    padding-bottom: 8vh;
+    padding-bottom: 6vh;
   }
   .containerRight .content section .main-content {
     font-size: 1rem;
