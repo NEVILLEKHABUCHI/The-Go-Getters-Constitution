@@ -204,12 +204,12 @@
     color: #BF5700;
   }
   .containerBody {
-    height: 87vh;
+    height: 80vh;
     /* padding-bottom: 10vh; */
   }
   .containerLeft {
     width: 60vw;
-    height: 87vh;
+    height: 80vh;
    position: absolute;
    top: 12vh;
    left: 0;
@@ -229,7 +229,7 @@
   }
   .containerRight {
     width: 99vw;
-    height: 87vh;
+    height: 80vh;
     /* padding-bottom: 2vh; */
   }
   .containerRight .content {
