@@ -172,6 +172,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .appContainer {
+    overflow-y: scroll;
+  }
   .containerTop {
     width: 99vw;
     height: 12vh;
@@ -227,11 +230,12 @@
   .containerRight {
     width: 99vw;
     height: 87vh;
+    /* padding-bottom: 2vh; */
   }
   .containerRight .content {
     width: 90vw;
     height: max-content;
-    /* padding-bottom: 5vh; */
+    padding-bottom: 4vh;
   }
   .containerRight .content section .main-content {
     font-size: 1rem;
