@@ -206,7 +206,7 @@
   }
   .containerLeft {
     width: 60vw;
-    height: 75vh;
+    height: 87vh;
    position: absolute;
    top: 12vh;
    left: 0;
@@ -214,9 +214,6 @@
    transform: translate(-100%);
    transition: transform 0.3s ease-in-out;
    /* padding-bottom: 2vh; */
-  }
-  .containerLeft .content{
-    height: 75vh;
   }
   .containerLeft .content a {
     font-size: 1rem;
@@ -229,8 +226,7 @@
   }
   .containerRight {
     width: 99vw;
-    height: 75vh;
-    padding-bottom: 10vh;
+    height: 87vh;
   }
   .containerRight .content {
     width: 90vw;

@@ -27,19 +27,18 @@ function ContainerTop({showContainerLeft,setShowContainerLeft}){
 function ContainerBody({showContainerLeft,setShowContainerLeft}){
   const navContents=[
     {
-      mainLink: {text: "Purpose and Date Founded",href: "#"},
+      mainLink: {text: "Purpose and Date Founded",href: "#Purpose-DateFounded"},
       subLinks: [
-        {text: "Purpose",href:"#"},
-        {text: "Date Founded",href : "#"},
-        {text: "Founders", href: "#"}
+        {text: "Purpose",href:"#Purpose"},
+        {text: "Date Founded",href : "#Date-Founded"}
       ]
     },
     {
-      mainLink: {text: "Membership",href: "#"},
+      mainLink: {text: "Membership",href: "#Membership"},
       subLinks: [
-        {text: "Eligibility",href:'#'},
-        {text: "Admission",href: '#'},
-        {text: "Responsibilities",href: '#'}
+        {text: "Eligibility",href:'#Eligibility'},
+        {text: "Admission",href: '#Admission'},
+        {text: "Responsibilities",href: '#Responsibilities'}
       ]
     },
     {
@@ -179,13 +178,13 @@ function ContainerRight({setShowContainerLeft}){
     <div  onClick={handleClick} className="containerRight">
         <div className='content'>
           <section>
-            <h2><span>Article 1:</span>Purpose and Date Founded</h2>
+            <h2 id='Purpose-DateFounded'><span>Article 1:</span>Purpose and Date Founded</h2>
             <p id='underline'><span></span></p>
 
-            <h3><span>1.1:</span>Date Founded.</h3>
+            <h3 id='Date-Founded'><span>1.1:</span>Date Founded.</h3>
             <p className='main-content'>The Go-Getters was founded on 13th April 2023 by Neville Khabuchi, Bense Mwikhali and Charles Joe.</p>
 
-            <h3><span>1.2:</span>Purpose</h3>
+            <h3 id='Purpose'><span>1.2:</span>Purpose</h3>
             <p className='main-content'>The purpose of this chama shall be to promote financial growth, stability and support among its members through regular 
               contributions[merry-go-rounds], savings, investments and farewell support during times of bereavement.
             </p>
