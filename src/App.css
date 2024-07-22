@@ -209,13 +209,12 @@
    background-color: gray;
    transform: translate(-100%);
    transition: transform 0.3s ease-in-out;
-   padding-bottom: 5vh;
   }
   .containerLeft .content {
     padding-bottom: 6vh;
   }
   .containerLeft .content a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .containerLeft.show {
     transform: translateX(0);
@@ -232,9 +231,9 @@
     padding-bottom: 6vh;
   }
   .containerRight .content section .main-content {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .containerRight .content section ol{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
