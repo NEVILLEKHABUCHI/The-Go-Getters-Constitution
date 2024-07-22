@@ -246,7 +246,7 @@ function ContainerRight({setShowContainerLeft}){
               </p>
               <ol>
                 <li>Assist the Chairperson in his/her duties.</li>
-                <li>Assume the role of the chaierperson in his/her absence.</li>
+                <li>Assume the role of the chairperson in his/her absence.</li>
                 <li>Prepare meeting agendas.</li>
                 <li>Oversee and manage register records.</li>
                 <li>Approve special loans.</li>
