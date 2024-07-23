@@ -27,10 +27,10 @@ function ContainerTop({showContainerLeft,setShowContainerLeft}){
 function ContainerBody({showContainerLeft,setShowContainerLeft}){
   const navContents=[
     {
-      mainLink: {text: "Purpose and Date Founded",href: "#Purpose-DateFounded"},
+      mainLink: {text: "Date Founded and Purpose",href: "#Purpose-DateFounded"},
       subLinks: [
-        {text: "Purpose",href:"#Purpose"},
-        {text: "Date Founded",href : "#Date-Founded"}
+        {text: "Date Founded",href:"#Date-Founded"},
+        {text: "Purpose",href : "#Purpose"}
       ]
     },
     {
@@ -46,7 +46,15 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
       subLinks: [
         {text:"Leadership Structure",href: '#'},
         {text:"Roles and Responsibilities",href: "#"},
-        {text: "Duties",href: "#"}
+        {text: "Elections",href: "#",subSubLinks:[
+          {text:"Election of Officers",href:"#"},
+          {text:"Nomination Process",href:"#"},
+          {text:"Voting Procedure",href:"#"},
+          {text:"Assumption of office",href:"#"},
+          {text:"Term of Office",href:"#"},
+          {text:"Vacancies",href:"#"},
+          {text:"Resignation",href:"#"}
+        ]}
       ]
     },
     {
@@ -231,6 +239,7 @@ function ContainerRight({setShowContainerLeft}){
               </ol>
 
               <h3><span>3.2:</span>Roles and Responsibilities</h3>
+
               <p className='main-content'>
                 <b>Chairperson:</b>
               </p>
@@ -241,6 +250,7 @@ function ContainerRight({setShowContainerLeft}){
                 <li>Represent the group in external matters.</li>
                 <li>Provide leadership and strategic direction.</li>
               </ol>
+
               <p className='main-content'>
                 <b>Vice Chairperson:</b>
               </p>
@@ -252,13 +262,76 @@ function ContainerRight({setShowContainerLeft}){
                 <li>Approve special loans.</li>
                 <li>Monitor group goals.</li>
               </ol>
+
               <p className='main-content'>
                 <b>Secretary:</b>
               </p>
               <ol>
                 <li>Record and maintain minutes of meetings.</li>
                 <li>Maintain an up-to-date list of members.</li>
+                <li>Incharge of the group's welfare.</li>
               </ol>
+
+              <p className='main-content'>
+                <b>Treasurer:</b>
+              </p>
+              <ol>
+                <li>Keep accurate financial records.</li>
+                <li>Manage group accounts and transactions.</li>
+                <li>Prepare financial reports and present them at meetings.</li>
+                <li>Ensure timely collection of member contributions.</li>
+                <li>Handle the distribution of funds as per group decisions.</li>
+              </ol>
+
+              <h3><span>3.3:</span>Elections</h3>
+
+              <h4><span>3.3.1:</span>Election of Officers</h4>
+              <ol>
+                  <li>Elections for the leadership positions within the chama shall be held after two years during the Annual General Meeting[AGM]</li>
+                  <li>The positions subject to election shall include, but are not limited to, the Chairperson,Vice-Chairperson, Secretary and the treasurer.</li>
+                  <li>All members in good standing are eligible to run for any office.</li>
+              </ol>
+
+              <h4><span>3.3.2:</span>Nomination Process</h4>
+              <ol>
+                <li>Nominations for each position shall be submitted in writing to the Secretary at least two weeks before the AGM.</li>
+                <li>Each nomination must be seconded by at least one other member.</li>
+                <li>A list of all nominees shall be circulated to the membership one week before the AGM.</li>
+              </ol>
+
+              <h4><span>3.3.3:</span>Voting Procedure</h4>
+              <ol>
+                <li>Voting shall be conducted by secret ballot during the AGM.</li>
+                <li>Each member shall have one vote per position.</li>
+                <li>The candidate receiving the highest number of votes for each position shall be declared elected.</li>
+                <li>In the event of a tie, a runoff election shall be held between the tied candidates.</li>
+              </ol>
+
+              <h4><span>3.3.4:</span>Assumption of Office</h4>
+              <ol>
+                <li>Newly elected officers shall assume their roles immediately following the conclusion of the AGM.</li>
+                <li>Outgoing officers shall ensure a smooth transition by providing all necessary documentation and briefings to the incoming officers within two weeks of the election.</li>
+              </ol>
+
+              <h4><span>3.3.5:</span>Term of Office</h4>
+              <ol>
+                <li>The term of office for all elected positions shall be one year.</li>
+                <li>Officers may be re-elected for consecutive terms without limitation.</li>
+              </ol>
+
+              <h4><span>3.3.6:</span>Vacancies</h4>
+              <ol>
+                <li>In the event of a vacancy in any elected position, a special election shall be held at the next regular meeting to fill the position for the remainder of the term.</li>
+                <li>Nominations for the special election shall follow the same process as regular elections.</li>
+              </ol>
+
+              <h4><span>3.3.7:</span>Resignation</h4>
+              <ol>
+                <li>Any officer may resign from their position by submitting a written notice to the Secretary.</li>
+                <li>The resignation shall take effect immediately upon receipt of the notice unless a later date is specified in the resignation letter.</li>
+                <li>In the event of a resignation, the position shall be considered vacant and a special election shall be conducted in accordance with Section 6 of Article 3 to fill the vacancy. </li>
+              </ol>
+
           </section>
         </div>
     </div>
