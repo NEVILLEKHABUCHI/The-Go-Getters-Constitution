@@ -60,9 +60,12 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
     {
       mainLink: {text: "Meetings",href:''},
       subLinks:[
-        {text:"Frequency", href: '#'},
-        {text:"Notice",href:'#'},
-        {text:"Quorum",href:'#'}
+        {text:"Types of Meetings", href: '#'},
+        {text:"Quorum",href:'#'},
+        {text:"Agenda",href:'#'},
+        {text:"Conduct of Meetings",href: "#"},
+        {text:"Minutes",href:"#"},
+        {text:"Attendance",href:"#"}
       ]
     },
     {
@@ -315,7 +318,7 @@ function ContainerRight({setShowContainerLeft}){
 
               <h4><span>3.3.5:</span>Term of Office</h4>
               <ol>
-                <li>The term of office for all elected positions shall be one year.</li>
+                <li>The term of office for all elected positions shall be two years.</li>
                 <li>Officers may be re-elected for consecutive terms without limitation.</li>
               </ol>
 
@@ -333,6 +336,76 @@ function ContainerRight({setShowContainerLeft}){
               </ol>
 
           </section>
+
+          <section>
+             <h2><span>Article 4:</span>Meetings</h2>
+            <p id='underline'><span></span></p>
+
+            <h3><span>4.1:</span>Types of Meetings</h3>
+              <p className='main-content'>
+                <b>Annual General Meeting[AGM]:</b>
+              </p>
+              <ol>
+                <li>The AGM shall be held once a year.</li>
+                <li>The purpose of the AGM is to elect officers, review the financial status, review the set goals for that particular year, set goals for the coming year 
+                  and discuss the overall progress of the chama.
+                </li>
+                <li>Notice of the AGM shall be given to all members at least four weeks in advance.</li>
+              </ol>
+
+              <p className='main-content'>
+                <b>Regular Meetings:</b>
+              </p>
+              <ol>
+                <li>Regular meetings shall be held on the 10th of every month.</li>
+                <li>The purpose of the regular meetings is to discuss ongoing activities, financial contributions and any other matters arising.</li>
+                <li>Notice of regular meetings shall be given to all members at least one week in advance.</li>
+              </ol>
+
+              <p className='main-content'>
+                <b>Special Meetings:</b>
+              </p>
+              <ol>
+                <li>Special meetings may be called by the Chairperson or by a written request from at least one-third of the members.</li>
+                <li>The purpose of special meetings is to address urgent or specific issues that cannot wait until the next regular meeting.</li>
+                <li>Notice of special meetings shall be given to all members at least three days in advance.</li>
+              </ol>
+
+              <h3><span>4.2:</span>Quorum</h3>
+              <ol>
+                <li>A quorum of any meeting shall consist of at least one-half of the total membership.</li>
+                <li>No official business shall be conducted without a quorum present.</li>
+              </ol>
+
+              <h3><span>4.3:</span>Agenda</h3>
+              <ol>
+                <li>The agenda of each meeting shall be prepared by the Vice-Chairperson in consultation with the Chairperson.</li>
+                <li>The agenda shall be circulated to all members at least three days before a regular or special meeting and four weeks before the AGM.</li>
+              </ol>
+
+              <h3><span>4.4:</span>Conduct of Meetings</h3>
+              <ol>
+                <li>Meetings shall be chaired by the Chairperson or in their absence, the Vice-Chairperson.</li>
+                <li>All members shall have the right to speak and vote on any matter under discussion.</li>
+                <li>Decisions shall be made by a simple majority vote of the members present, unless otherwise specified in this constitution.</li>
+              </ol>
+
+              <h3><span>4.5:</span>Minutes</h3>
+              <ol>
+                <li>The Secretary shall record the minutes of each meeting.</li>
+                <li>The minutes shall include a summary of discussions, decisions made and any actions to be taken.</li>
+                <li>The minutes shall be distributed to all members within one week after the meeting.</li>
+                <li>The minutes of the previous meeting shall be reviewed and approved at the beginning of the next meeting.</li>
+              </ol>
+
+              <h3><span>4.6:</span>Attendance</h3>
+              <ol>
+                <li>Members are expected to attend all meetings.</li>
+                <li>Any member who is unable to attend a meeting shall notify the group in advance, providing a valid reason for their absence.</li>
+                <li>Persistent absenteeism without valid reason may lead to disciplinary action as stated in article 5 of this constitution.</li>
+              </ol>
+          </section>
+          
         </div>
     </div>
   )

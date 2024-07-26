@@ -170,7 +170,9 @@
 .containerRight .content section:nth-of-type(3) .main-content{
   display: block;
 }
-
+.containerRight .content section:nth-of-type(4) .main-content{
+  display: block;
+}
 @media only screen and (max-width: 900px) {
   .containerTop {
     width: 99vw;
