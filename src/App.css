@@ -147,12 +147,12 @@
   border: 2px solid #BF5700;
   border-radius: 10px;
 }
-.containerRight .content section h3,h4{
+.containerRight .content section h3,h4,h5{
   display: flex;
   justify-content: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.containerRight .content section h3 span,h4 span {
+.containerRight .content section h3 span,h4 span, h5 span {
   color: #BF5700;
 }
 .containerRight .content section .main-content{
@@ -171,6 +171,9 @@
   display: block;
 }
 .containerRight .content section:nth-of-type(4) .main-content{
+  display: block;
+}
+.containerRight .content section:nth-of-type(5) .main-content{
   display: block;
 }
 @media only screen and (max-width: 900px) {
