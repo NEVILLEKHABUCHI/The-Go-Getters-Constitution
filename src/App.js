@@ -108,13 +108,13 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
   ]
   return (
     <div className="containerBody">
-      <ContainerLeft show={showContainerLeft} navContents={navContents}/>
+      <ContainerLeft show={showContainerLeft} setShowContainerLeft = {setShowContainerLeft} navContents={navContents}/>
       <ContainerRight setShowContainerLeft={setShowContainerLeft}/>
     </div>
   )
 }
 
-function ContainerLeft({show,navContents}){
+function ContainerLeft({show,setShowContainerLeft,navContents}){
   const [navState,setNavState]=useState(Array(navContents.length).fill(false));
   const [subNavState,setSubNavState]=useState(
     navContents.map(content=>Array(content.subLinks.length).fill(false))
@@ -137,6 +137,10 @@ function ContainerLeft({show,navContents}){
     });
   };
 
+  const handleLinkClick = () => {
+    setShowContainerLeft(false);
+  }
+
   return (
     <div className={`containerLeft ${show ? 'show' : 'hide'}`}>
       <h4>Table of Contents.</h4>
@@ -144,7 +148,7 @@ function ContainerLeft({show,navContents}){
         {navContents.map((content,index)=>(
           <div key={index} className='nav-bar'>
             <div className='mainLink'>
-              <a href={content.mainLink.href}><span>Article {index+1}: </span>{content.mainLink.text}</a>
+              <a href={content.mainLink.href} onClick={handleLinkClick}><span>Article {index+1}: </span>{content.mainLink.text}</a>
                 {content.subLinks.length>0 && (
                     <button onClick={()=>toggleNav(index)}>
                     {navState[index] ? <i className='fa fa-chevron-up'></i> : <i className='fa fa-chevron-down'></i>}
@@ -155,7 +159,7 @@ function ContainerLeft({show,navContents}){
               {content.subLinks.map((sublink,subIndex)=>(
                 <div key={subIndex}>
                   <div>
-                    <a href={sublink.href}><span>{index+1}.{subIndex+1}: </span>{sublink.text}</a>
+                    <a href={sublink.href} onClick={handleLinkClick}><span>{index+1}.{subIndex+1}: </span>{sublink.text}</a>
                     {sublink.subSubLinks && (
                       <button onClick={()=>toggleSubNav(index,subIndex)}>
                         {subNavState[index][subIndex] ? <i className='fa fa-chevron-up'></i> : <i className='fa fa-chevron-down'></i>}
@@ -165,7 +169,7 @@ function ContainerLeft({show,navContents}){
                   {sublink.subSubLinks && (
                     <div className={`nav-content ${subNavState[index][subIndex] ? 'show' : ''}`} id='sublink'>
                       {sublink.subSubLinks.map((subSublink,subSubIndex)=>(
-                        <a key={subSubIndex} href={subSublink.href}><span>{index+1}.{subIndex+1}.{subSubIndex+1}: </span>{subSublink.text}</a>
+                        <a key={subSubIndex} href={subSublink.href} onClick={handleLinkClick}><span>{index+1}.{subIndex+1}.{subSubIndex+1}: </span>{subSublink.text}</a>
                       ))}
                     </div>
                   )}
