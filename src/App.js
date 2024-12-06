@@ -69,10 +69,16 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
       ]
     },
     {
-      mainLink: {text: "Finances",href: '#'},
+      mainLink: {text: "Finances",href: '#Finances'},
       subLinks: [
-        {text:"Merry-go-round",href: '#'},
-        {text:"Savings",href: '#'},
+        {text:"Financial Contributions",href: '#Financial_Contributions'},
+        {text:"Sources Of Income",href: '#Sources_of_Income', subSubLinks:[
+          {text:"Loaning Project", href: '#Loaning_Project'},
+          {text:"Fines", href: '#Fines'},
+          {text:"Interest from Savings and Investments", href: '#Savings_Investments_Interest'},
+          {text:"Donations and Grants", href: '#Donations_and_Grants'},
+          {text:"Fundraising Activities", href: '#Fundraising_Activities'}
+        ]},
         {text:"Emergency Fund",href: '#'},
         {text:"Project",href: '#',subSubLinks:[
           {text:"Project Rules",href: ''},
@@ -206,20 +212,20 @@ function ContainerRight({setShowContainerLeft}){
           </section>
 
           <section>
-            <h2><span>Article 2:</span>Membership</h2>
+            <h2 id='Membership'><span>Article 2:</span>Membership</h2>
             <p id='underline'><span></span></p>
 
-            <h3><span>2.1:</span>Eligibility</h3>
+            <h3 id='Eligibility'><span>2.1:</span>Eligibility</h3>
             <p className='main-content'>Membership shall be open to individuals aged 18 and above who reside in any part of the country[Kenya] and agree to abide by The Go-Getters'
                rules and regulations.
             </p>
 
-            <h3><span>2.2:</span>Admission</h3>
+            <h3 id='Admission'><span>2.2:</span>Admission</h3>
             <p className='main-content'>Prospective members must pay one hundred shillings[100/=] non-refundable registration fee plus the by then investment money[project money] 
                contributed by other members.
             </p>
 
-            <h3><span>2.3:</span>Responsibilities</h3>
+            <h3 id='Responsibilities'><span>2.3:</span>Responsibilities</h3>
             <p className='main-content'>Members are expected to:</p>
             <ol>
               <li>Respect each other.</li>
@@ -411,10 +417,10 @@ function ContainerRight({setShowContainerLeft}){
           </section>
 
           <section>
-            <h2><span>Article 5:</span>Finance</h2>
+            <h2 id='Finances'><span>Article 5:</span>Finances</h2>
             <p id='underline'><span></span></p>
 
-            <h3><span>5.1:</span>Financial Contributions.</h3>
+            <h3 id='Financial_Contributions'><span>5.1:</span>Financial Contributions.</h3>
             <p className='main-content'>
               <b>Registration Fee:</b>
             </p>
@@ -453,7 +459,24 @@ function ContainerRight({setShowContainerLeft}){
             </ol>
 
             <p className='main-content'>
-              <b>Additional Contributions</b>
+              <b>Fines: </b><br/>
+              Fines are imposed to encourage discipline and accountability among members. The following rules apply: 
+            </p>
+            <ol>
+              <li>Delays in Attending Meetings:</li>
+              <p>i. A member who delays attending a meeting shall pay a fine of <b>20/=</b>.</p>
+              <p>ii.  An executive member who delays shall pay a fine of <b>40/=</b>.</p>
+
+              <li>Missing Meetings without Permission.</li>
+              <p>i. A member who misses a meeting without prior permission shall pay a fine of <b>50/=</b>.</p>
+              <p>ii.  An executive member who misses a meeting without permission shall pay a fine of <b>100/=</b>.</p>
+
+              <li>Repeated Absences:</li>
+              <p>i. If a member misses <b>three consecutive meetings</b>, whether with or without permission, they shall be required to pay a fine of <b>50/=</b> for each additional missed meeting thereafter.</p>
+            </ol>
+
+            <p className='main-content'>
+              <b>Additional Contributions:</b>
             </p>
             <ol>
               <li>Members shall contribute for special purposes as determined by the chama, including but not limited to: </li>
@@ -463,8 +486,8 @@ function ContainerRight({setShowContainerLeft}){
               <li>The contribution amounts and payment timelines for these purposes shall be communicated in advance.</li>
             </ol>
 
-            <h3><span>5.2:</span>Source of Income.</h3>
-            <h4><span>5.2.1:</span>Loaning Project</h4>
+            <h3 id='Sources_of_Income'><span>5.2:</span>Sources of Income.</h3>
+            <h4 id='Loaning_Project'><span>5.2.1:</span>Loaning Project</h4>
             <p className='main-content'>
               The Go-Getters provides loans to members, generating income from interest and penalties.<br/>
             </p>
@@ -474,7 +497,7 @@ function ContainerRight({setShowContainerLeft}){
               <b>1. Voluntary Loans:</b>
               <ol>
                 <li>Members can apply for loans based on their individual financial needs.</li>
-                <li>Members can borrow upto 50% of their total savings and contributions to the emergency fund.</li>
+                <li>Members can borrow upto <b>50%</b> of their total savings and contributions to the emergency fund.</li>
                 <li>Loan applications must be approved by the executive committee or during a general meeting.</li>
                 <li>Borrowers must be in good standing, with no outstanding loans, fines or overdue contributions.</li>
               </ol>
@@ -488,6 +511,92 @@ function ContainerRight({setShowContainerLeft}){
                 <li>The loan amount and duration shall be determined by the Go-Getters at the beginning of the loan cycle.</li>
               </ol>
             </p>
+
+            <h4>Interest and Penalties</h4>
+            <p className='main-content'>
+              <b>1. Normal Interest Rate:</b>
+              <ol>
+                <li>Loans shall attract a standard interest rate of <b>10%</b> per month.</li>
+                <li>Interest shall be calculated based on the principal amount and repayment period agreed upon during the loan approval.</li>
+              </ol>
+            </p>
+
+            <p className='main-content'>
+              <b>2. Penalties for Delayed Payments:</b>
+              <ol>
+                <li>Members are allowed a grace period of <b>three months</b> to settle outstanding loan repayments.</li>
+                <li>If a member fails to pay their loan within the specified period, an <b>interest rate of 15%</b> shall be charged for each month the loan remains unpaid beyond the grace period.</li>
+              </ol>
+            </p>
+            <p className='main-content'>
+              <b>3. Enforcement for Non-Compliance with Loan Repayment Terms:</b>
+              <ol>
+                <li>Restriction from Chama Benefits: </li>
+                <p>i. The member shall be barred from accessing futuree loans until the overdue loan and penalties are fully settled.</p>
+                <p>ii.  The member may be excluded from partcipating in profit-sharing activities, including dividends from chama projects.</p>
+
+                <li>Deduction from Member Savings:</li>
+                <p>i. The chama reserves the right to deduct unpaid amounts directly from the member's savings or emergency fund contributions.</p>
+                <p>ii.  This action shall be taken after issuing a formal notice to the member.</p>
+
+                <li>Suspension of Membership Rights:</li>
+                <p>i. The member may be temporarily suspended from voting rights or holding leadership positions until they settle their debts.</p>
+                <p>ii.  Such suspensions shall be documented in the minutes of a general meeting.</p>
+
+                <li>Termination of Membership:</li>
+                <p>i. Persistent non-compliance may result in the termination of the member's membership.</p>
+                <p>ii.  Upon termination, the member shall forfeit certain rights, including access to the emergency fund or ongoing project benefits.</p>
+                <p>iii. Any remaining debts shall still be recoverable by the chama.</p>
+              </ol>
+            </p>
+
+            <h4>Interest and Profit Sharing</h4>
+            <ol>
+              <li>The interest generated from the loans shall be divided as follows: </li>
+              <p>i. <b>50% of the interest</b> is allocated as the borrowing member's individual profit.</p>
+              <p>ii. <b>50% of the interest</b> is retained as the group's profit.</p>
+              <p>iii. Interest generated from <b>penalties</b> is retained as the group's profit.</p>
+              <li>The group's profit shall be discussed during the Annual General Meeting(AGM) to determine its purpose, which may include reinvestment, member benefits or funding projects.</li>
+            </ol>
+
+            <h4 id='Fines'><span>5.2.2: </span>Fines</h4>
+            <ol>
+              <li>Fines imposed shalled be added to the general account.</li>
+              <li>The Treasurer shall document the reason for the fine, the date the fine was paid and the member who paid the fine.</li>
+            </ol>
+
+            <h4 id='Savings_Investments_Interests'><span>5.2.3: </span>Interest from Savings and Investments</h4>
+            <ol>
+              <li>Funds in the chama's savings or fixed deposit accounts shall earn interest, which shall be credited to the general account.</li>
+              <li>The chama may also invest in low-risk financial instruments with member approval.</li>
+            </ol>
+
+            <h4 id='Donations_and_Grants'><span>5.2.4: </span>Donations and Grants</h4>
+            <ol>
+              <li>The chama may accept financial support from individuals, organizations or institutions.</li>
+              <li>All donations and grants must be transparently recorded and used as per agreed terms.</li>
+            </ol>
+
+            <h4 id='Fundraising_Activities'><span>5.2.5: </span>Fundraising Activities</h4>
+            <ol>
+              <li>Income may be generated through events such as: </li>
+              <p>i. Raffles, auctions and charity drives.</p>
+              <p>ii.  Organized activities to support specific projects or operational needs.</p>
+              <li>Funds raised shall be accounted for separately and used according to the purpose of the event.</li>
+            </ol>
+
+            <h3><span>5.3:</span>Utilization of Funds.</h3>
+            <ol>
+              <li><b>Registration Fees: </b>Used for administrative costs particularly catering for transaction costs.</li>
+              <li><b>Merry-Go-Round: </b>Funds distributed to members on a rotational basis based on the agreed schedule.</li>
+              <li><b>Fines: </b>Added to the general fund unless earmarked for specific needs.</li>
+              <li><b>Emergency Funds: </b></li>
+              <p>i. Disbursed only for approved emergencies.</p>
+              <p>ii.  A member receiving funds must provide accountability (e.g., medical bills, receipts)</p>
+
+              <li><b>Project Funds: </b>Used strictly for approved projects, with regular progress reports provided.</li>
+              <li><b>Additional Contributions: </b>Dedicated solely to the specified purpose (e.g., AGM events). Surplus, if any, shall revert to the general fund/account.</li>
+            </ol>
           </section>
           
         </div>
