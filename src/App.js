@@ -38,7 +38,8 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
       subLinks: [
         {text: "Eligibility",href:'#Eligibility'},
         {text: "Admission",href: '#Admission'},
-        {text: "Responsibilities",href: '#Responsibilities'}
+        {text: "Responsibilities",href: '#Responsibilities'},
+        {text: "Loss of Membership", href: '#Loss_of_Membership'}
       ]
     },
     {
@@ -54,6 +55,12 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
           {text:"Term of Office",href:"#Term_of_Office"},
           {text:"Vacancies",href:"#Vacancies"},
           {text:"Resignation",href:"#Resignation"}
+        ]},
+        {text: "Loss of Leadership",href: "#Loss_of_Leadership",subSubLinks:[
+          {text:"Grounds for Loss of Leadership", href:"#Grounds_for_Loss_of_Leadership"},
+          {text:"Process for Removal",href:"#Process_for_Removal"},
+          {text:"Succession Plan", href:"#Succession_Plan"},
+          {text:"Reinstatement of Leadership", href:"#Reinstatement_of_Leadership"}
         ]}
       ]
     },
@@ -79,37 +86,51 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
           {text:"Donations and Grants", href: '#Donations_and_Grants'},
           {text:"Fundraising Activities", href: '#Fundraising_Activities'}
         ]},
-        {text:"Emergency Fund",href: '#'},
-        {text:"Project",href: '#',subSubLinks:[
-          {text:"Project Rules",href: ''},
-          {text:"Project Interest",href: ''}
-        ]},
-        {text:"Fines",href:"#"},
-        {text:"Withdrawals",href: "#"}
+        {text:"Utilization of Funds",href: "#Utilization_of_Funds"}
       ]
     },
     {
-      mainLink:{text: "Farewell Support",href: '#'},
+      mainLink:{text: "Farewell Support",href: '#Farewell_Support'},
       subLinks: [
-        {text:"Purpose",href: "#"},
-        {text:"Amount per support",href: "#"},
-        {text:"Process",href: "#"}
+        {text:"Purpose",href: "#Farewell_Purpose"},
+        {text:"Amount per support",href: "#Amount_Per_Support"},
+        {text:"Process",href: "#Process"},
+        {text:"Record Keeping",href: "#Record_Keeping"},
+        {text:"Extraordinary Circumstances",href: "#Extraordinary_Circumstances"}
       ]
     },
     {
-      mainLink:{text: "Amendments",href: '#'},
+      mainLink:{text: "Amendments",href: '#Amendments'},
       subLinks:[
-        {text: "Process",href: "#"},
-        {text: "Notification",href: "#"}
+        {text: "Purpose",href: "#Amendments_Purpose"},
+        {text: "Authority to Amend",href: "#Authority_to_Amend"},
+        {text: "Proposal for Amendments",href: "#Proposal_for_Amendments"},
+        {text: "Notification to Members", href: "#Notification_to_Members"},
+        {text: "Voting on Amendments", href: "#Voting_on_Amendments"},
+        {text: "Effective Date of Amendments",href: "#Effective_Date_Of_Amendments"},
+        {text: "Record Keeping", href: "#Record_Keeping"},
+        {text: "Restrictions on Amendments", href: "#Restrictions_on_Amendments"},
+        {text: "Review Period and Dispute Resolution", href: "#Review_Period"}
       ]
     },
     {
-      mainLink:{text: "Dissolution"},
-      subLinks:[]
+      mainLink:{text: "Dissolution",href:"Dissolution"},
+      subLinks:[
+        {text:"Purpose",href:"#Dissolution_Purpose"},
+        {text:"Grounds for Dissolution",href:"#Grounds_for-Dissolution"},
+        {text:"Notice of Dissolution",href:"#Notice_of_Dissolution"},
+        {text:"Process of Dissolution",href:"#Process_of_Dissolution"},
+        {text:"Distribution of Assets", href:"#Distribution_of_Assets"},
+        {text:"Final Record Keeping", href:"#Final_Record_Keeping"}
+      ]
     },
     {
-      mainLink:{text: "Adoption"},
-      subLinks: []
+      mainLink:{text: "Adoption", href:"#Adoption"},
+      subLinks: [
+        {text:"Purpose",href:"#Adoption_Purpose"},
+        {text:"Approval of the Constitution",href:"#Approval_of_the_Constitution"},
+        {text:"Declaration of Adoption",href:"#Declaration_of_Adoption"}
+      ]
     }
   ]
   return (
@@ -234,6 +255,28 @@ function ContainerRight({setShowContainerLeft}){
               <li>Participate in the group's activities.</li>
               <li>Support fellow members in times of need(bereavement)</li>
             </ol>
+
+            <h3 id='Loss_of_Membership'><span>2.4:</span>Loss of Membership</h3>
+            <ol>
+              <li><b>Voluntary Withdrawal:</b></li>
+                <p>i. A member may voluntarily withdraw their membership by submitting a written resignation to the secretary, stating their reasons and providing a notice period of at least <b>30 days</b>.</p>
+                <p>ii. The member's financial obligations, including repayment of any outstanding loans, fines or contributions, must be cleared before their resignation is accepted by the chairperson.</p>
+              <li><b>Involuntary Loss of Membership:</b></li>
+                <p>A member may lose their membership for any of the following reasons:</p>
+                <ol>
+                  <li><b>Failure to Meet Financial Obligations:</b> Persistent failure to pay loans, fines or contributions after multiple reminders and warnings.</li>
+                  <li><b>Violation of the Constitution:</b> Breaching key provisions of the constitution or engaging in activities that harm the reputation or objectives of the chama.</li>
+                  <li><b>Non-Attendance:</b> Missing <b>seven consecutive meetings</b> without valid reasons and failing to comply with penalties imposed.</li>
+                </ol>
+              <li><b>Process of Termination of Membership:</b></li>
+                <p>i. For <b>involuntary loss of membership</b>, the matter shall be reviewed by the executive committee and the member will be given an opportunity to present their defence.</p>
+                <p>ii. A resolution to terminate membership must be passed by a majority vote of the executive committee and ratified by members during the next meeting.</p>
+                <p>iii. A <b>voluntary loss of membership</b> shall only be accepted at the end of a merry-go-round.</p>
+              <li><b>Refund of Savings and Contributions:</b></li>
+                <p>i. Upon withdrawal or termination, the member is entitled to a refund of their savings and other contributions, less any outstanding debts, fines or penalties, within <b>60 days</b> of their exit.</p>
+              <li><b>Reinstatement of Membership:</b></li>
+                <p>A former member may apply for reinstatement by submitting a written request and fulfilling the conditions for joining as a new member.</p>
+              </ol>
           </section>
 
           <section>
@@ -345,6 +388,89 @@ function ContainerRight({setShowContainerLeft}){
                 <li>In the event of a resignation, the position shall be considered vacant and a special election shall be conducted in accordance with Section 6 of Article 3 to fill the vacancy. </li>
               </ol>
 
+              <h3 id='Loss_of_Leadership'><span>3.4:</span>Loss of Leadership</h3>
+              <h4 id='Grounds_for_Loss_of_Leadership'><span>3.4.1:</span>Grounds for Loss of Leadership</h4>
+              <ol>
+                   <p>A leader may lose their position for the following reasons:</p>
+                   <li><b>Failure to Fulfill Duties:</b></li>
+                   <ol>
+                    <li>Consistent neglect of responsibilities outlined in the constitution or agreed upon by members.</li>
+                    <li>Absence from <b>three consecutive meetings</b> without valid reasons.</li>
+                   </ol>
+                   <li><b>Financial Mismanagement or Misconduct:</b></li>
+                   <ol>
+                    <li>Misuse, embezzlement or fraud involving chama funds or resources.</li>
+                    <li>Failure to account for financial transactions or maintain accurate records.</li>
+                   </ol>
+                   <li><b>Breach of Chama Constitution or Policies:</b></li>
+                   <ol>
+                    <li>Violation of constitutional provisions, including conflict of interest or engaging in actions detrimental to the chama's objectives.</li>
+                   </ol>
+                   <li><b>Misconduct or Abuse of Power:</b></li>
+                   <ol>
+                    <li>Unethical behaviour, harassment, intimidation or discrimination against members.</li>
+                    <li>Abuse of power for personal gain or to unfairly influence decisions.</li>
+                   </ol>
+                   <li><b>Loss of Membership:</b></li>
+                   <ol>
+                    <li>A leader who loses their membership, whether voluntarily or involuntarily, automatically forfeits their leadership position.</li>
+                   </ol>
+                   <li><b>Loss of Confidence by Members:</b></li>
+                   <ol>
+                    <li>A vote of no confidence passed by at least <b>two-thirds of the members</b> during an Annual General Meeting(AGM).</li>
+                   </ol>
+              </ol>
+
+              <h4 id='Process_for_Removal'><span>3.4.2:</span>Process for Removal</h4>
+              <ol>
+                <li><b>Initiation of Removal Process:</b></li>
+                <ol>
+                  <li>Any member can file written petition to the executive committee detailing the reasons for seeking the removal of a leader.</li>
+                  <li>The petition must be signed by at least <b>one-third of the members</b> for it to be considered valid.</li>
+                </ol>
+                <li><b>Investigation:</b></li>
+                <ol>
+                  <li>The executive commmittee (excluding the accused leader) shall appoint an impartial panel to investigate the claims.</li>
+                  <li>The leader in question shall be given an oppportunity to respond to the allegations in writing or in person.</li>
+                </ol>
+                <li><b>Resolution Meeting:</b></li>
+                <ol>
+                  <li>The findings of the investigation shall be presented to members during a Special General Meeting(SGM).</li>
+                  <li>Members shall deliberate on the findings and vote on the removal.</li>
+                </ol>
+                <li><b>Voting Process:</b></li>
+                <ol>
+                  <li>A leader shall be removed if at least <b>two-thirds of the members present</b> vote in favour of their removal.</li>
+                  <li>Voting shall be conducted by secret ballot to ensure fairness.</li>
+                </ol>
+                <li><b>Immediate Effects of Removal:</b></li>
+                <p>Upon removal, the leader must:</p>
+                <ol>
+                  <li>Hand over all chama property, documents and responsibilities to their successor or the executive commmittee.</li>
+                  <li>Clear any pending financial obligations with the chama.</li>
+                </ol>
+              </ol>
+
+               <h4 id='Succession_Plan'><span>3.4.3:</span>Succession Plan</h4>
+               <ol>
+                <li>If a leader is removed, the chama shall:</li>
+                <ol>
+                  <li>Appoint an acting leader from among the members or the executive committee.</li>
+                  <li>Conduct a by-election within <b>30 days</b> to fill the vacant position, unless the next AGM is scheduled within <b>three months</b>.</li>
+                </ol>
+                <li>The acting leader shall serve only until a permanent replacement is elected.</li>
+               </ol>
+
+               <h4 id='Reinstatement_of_Leadership'><span>3.4.4:</span>Reinstatement of Leadership</h4>
+               <ol>
+                <li>A removed leader may only be reinstated if:</li>
+                <ol>
+                  <li>They provide evidence refuting the allegations against them.</li>
+                  <li>Members vote for their reinstatement with a <b>two-thirds majority</b>.</li>
+                </ol>
+                <li>Reinstatement must be approved at an AGM or SGM.</li>
+               </ol>
+
           </section>
 
           <section>
@@ -426,7 +552,7 @@ function ContainerRight({setShowContainerLeft}){
             </p>
             <ol>
               <li>All new members must pay a one-time registration fee upon joining the chama.</li>
-              <li>The amount of the fee shall be reviewed annually and approved by the general membership.</li>
+              <li>The amount of fee shall be reviewed annually and approved by the general membership.</li>
               <li>Registration fees are non-refundable.</li>
             </ol>
 
@@ -446,7 +572,7 @@ function ContainerRight({setShowContainerLeft}){
               <li>Members shall contribute a predetermined amount regularly to build the emergency fund.</li>
               <li>The contribution amount shall be set during a general meeting and reviewed periodically to reflect chama's financial capacity and needs.</li>
               <li>Emergency fund contributions are mandatory for all members.</li>
-              <li>Emergency funds shall be contributed together with the merry-go-round</li>
+              <li>Emergency funds shall be contributed together with the merry-go-round.</li>
             </ol>
 
             <p className='main-content'>
@@ -454,7 +580,7 @@ function ContainerRight({setShowContainerLeft}){
             </p>
             <ol>
               <li>Project funds shall be raised through special contributions made by all members as per the requirements of approved projects.</li>
-              <li>The amount to be contributed by each member shall be determined during a meeting and may be collected in installments or as a lump sum.</li>
+              <li>The amount to be contributed by each member shall be determined during a meeting and may be collected in instalments or as a lump sum.</li>
               <li>Additional fundraising activities such as raffles or community events, may also be organized to boost project funds.</li>
             </ol>
 
@@ -467,7 +593,7 @@ function ContainerRight({setShowContainerLeft}){
               <p>i. A member who delays attending a meeting shall pay a fine of <b>20/=</b>.</p>
               <p>ii.  An executive member who delays shall pay a fine of <b>40/=</b>.</p>
 
-              <li>Missing Meetings without Permission.</li>
+              <li>Missing Meetings without Permission:</li>
               <p>i. A member who misses a meeting without prior permission shall pay a fine of <b>50/=</b>.</p>
               <p>ii.  An executive member who misses a meeting without permission shall pay a fine of <b>100/=</b>.</p>
 
@@ -487,7 +613,7 @@ function ContainerRight({setShowContainerLeft}){
             </ol>
 
             <h3 id='Sources_of_Income'><span>5.2:</span>Sources of Income.</h3>
-            <h4 id='Loaning_Project'><span>5.2.1:</span>Loaning Project</h4>
+            <h4 id='Loaning_Project'><span>5.2.1:</span>Loaning Project.</h4>
             <p className='main-content'>
               The Go-Getters provides loans to members, generating income from interest and penalties.<br/>
             </p>
@@ -497,7 +623,7 @@ function ContainerRight({setShowContainerLeft}){
               <b>1. Voluntary Loans:</b>
               <ol>
                 <li>Members can apply for loans based on their individual financial needs.</li>
-                <li>Members can borrow upto <b>50%</b> of their total savings and contributions to the emergency fund.</li>
+                <li>Members can borrow up to <b>50%</b> of their total savings and contributions to the emergency fund.</li>
                 <li>Loan applications must be approved by the executive committee or during a general meeting.</li>
                 <li>Borrowers must be in good standing, with no outstanding loans, fines or overdue contributions.</li>
               </ol>
@@ -532,7 +658,7 @@ function ContainerRight({setShowContainerLeft}){
               <b>3. Enforcement for Non-Compliance with Loan Repayment Terms:</b>
               <ol>
                 <li>Restriction from Chama Benefits: </li>
-                <p>i. The member shall be barred from accessing futuree loans until the overdue loan and penalties are fully settled.</p>
+                <p>i. The member shall be barred from accessing future loans until the overdue loan and penalties are fully settled.</p>
                 <p>ii.  The member may be excluded from partcipating in profit-sharing activities, including dividends from chama projects.</p>
 
                 <li>Deduction from Member Savings:</li>
@@ -561,14 +687,14 @@ function ContainerRight({setShowContainerLeft}){
 
             <h4 id='Fines'><span>5.2.2: </span>Fines</h4>
             <ol>
-              <li>Fines imposed shalled be added to the general account.</li>
+              <li>Fines imposed shall be added to the general account.</li>
               <li>The Treasurer shall document the reason for the fine, the date the fine was paid and the member who paid the fine.</li>
             </ol>
 
             <h4 id='Savings_Investments_Interests'><span>5.2.3: </span>Interest from Savings and Investments</h4>
             <ol>
               <li>Funds in the chama's savings or fixed deposit accounts shall earn interest, which shall be credited to the general account.</li>
-              <li>The chama may also invest in low-risk financial instruments with member approval.</li>
+              <li>The chama may also invest in low-risk financial investments with members' approval.</li>
             </ol>
 
             <h4 id='Donations_and_Grants'><span>5.2.4: </span>Donations and Grants</h4>
@@ -585,20 +711,208 @@ function ContainerRight({setShowContainerLeft}){
               <li>Funds raised shall be accounted for separately and used according to the purpose of the event.</li>
             </ol>
 
-            <h3><span>5.3:</span>Utilization of Funds.</h3>
+            <h3 id='Utilization_of_Funds'><span>5.3:</span>Utilization of Funds.</h3>
             <ol>
               <li><b>Registration Fees: </b>Used for administrative costs particularly catering for transaction costs.</li>
               <li><b>Merry-Go-Round: </b>Funds distributed to members on a rotational basis based on the agreed schedule.</li>
               <li><b>Fines: </b>Added to the general fund unless earmarked for specific needs.</li>
               <li><b>Emergency Funds: </b></li>
               <p>i. Disbursed only for approved emergencies.</p>
-              <p>ii.  A member receiving funds must provide accountability (e.g., medical bills, receipts)</p>
+              <p>ii.  A member receiving funds must provide accountability (e.g., medical bills, receipts).</p>
 
               <li><b>Project Funds: </b>Used strictly for approved projects, with regular progress reports provided.</li>
               <li><b>Additional Contributions: </b>Dedicated solely to the specified purpose (e.g., AGM events). Surplus, if any, shall revert to the general fund/account.</li>
             </ol>
           </section>
-          
+
+          <section>
+            <h2 id='Farewell_Support'><span>Article 6:</span>Farewell Support</h2>
+            <p id='underline'><span></span></p>
+
+            <h3 id='Farewell_Purpose'><span>6.1:</span>Purpose</h3>
+            <p className='main-content'>
+              The purpose of the Farewell Support article is to provide financial and moral support to members and their families during times of bereavement. 
+              This support ensures solidarity and collective care among members of the chama.
+            </p>
+
+            <h3 id='Amount_Per_Support'><span>6.2:</span>Amount Per Support</h3>
+            <ol>
+              <li><b>Loss of a Member:</b> A contribution of <b>Five Hundred Shillings[500/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Loss of a Parent:</b> A contribution of <b>Two Hundred Shillings[200/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Loss of a Sibling:</b> A contribution of <b>One Hundred and Fifty[150/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Additional Support:</b> Any other support shall be voluntary, except in extreme cases where the chairperson may approve additional compulsory contributions.</li>
+            </ol>
+
+            <h3 id='Process'><span>6.3:</span>Process</h3>
+            <ol>
+              <li><b>Notification:</b></li>
+                <p>The affected member or their representative shall notify the chairperson or secretary of the bereavement immediately.</p>
+              <li><b>Approval and Execution:</b></li>
+                <p>i. The chairperson shall confirm the eligibility of the claim and authorize the withdrawal of the specified amounts from members' emergency funds.</p>
+                <p>ii. The treasurer shall ensure timely collection and disbursement of funds to the affected party.</p>
+              <li><b>Voluntary Contributions:</b></li>
+              <p>i. Members willing to provide additional support can do so voluntarily.</p>
+              <p>ii. These contributions shall be coordinated and recorded separately by the treasurer.</p>
+              <p>iii. The affected member can as well create a WhatsApp group for the same and invite members to join. In such a case, the group's treasurer shall not manage the contributions.</p>
+            </ol>
+
+            <h3 id='Record_Keeping'><span>6.4:</span>Record Keeping</h3>
+            <ol>
+              <li>The treasurer shall maintain detailed records of all contributions, withdrawals and disbursements related to farewell support.</li>
+              <li>These records shall be presented during the next chama meeting for transparency.</li>
+            </ol>
+
+            <h3 id='Extraordinary_Circumstances'><span>6.5:</span>Extraordinary Cicumstances</h3>
+            <ol>
+              <li>In extreme or unforeseen situations, the chairperson, with the approval of the executive committee, may determine the need for additional compulsory contributions.</li>
+              <li>Such cases shall be communicated clearly to all members.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 id='Amendments'><span>Article 7:</span>Amendments</h2>
+            <p id='underline'><span></span></p>
+
+            <h3 id='Amendments_Purpose'><span>7.1:</span>Purpose</h3>
+            <p className='main-content'>
+              The purpose of this article is to outline the process and guidelines for making changes, additions or deletions to the chama's constitution to ensure it remains 
+              relevant, fair and effective in governing the chama.
+            </p>
+
+            <h3 id='Authority_to_Amend'><span>7.2:</span>Authority to Amend</h3>
+            <ol>
+              <li>Amendments to this constitution can only be made during an Annual General Meeting(AGM) or a Special General Meeting(SGM) convened for this purpose.</li>
+              <li>Only members in good standing (having no outstanding fines, loans or disciplinary actions) are eligible to participate in the amendment process.</li>
+            </ol>
+
+            <h3 id='Proposal_for_Amendments'><span>7.3:</span>Proposal for Amendments</h3>
+            <ol>
+              <li>Any member wishing to propose an amendment must submit their proposal in writing to the secretary at least <b>30 days</b> before the AGM or SGM.</li>
+              <li>The proposal must clearly state:</li>
+                <p>i. The section(s) of the constitution to be amended.</p>
+                <p>ii. The specific changes being proposed.</p>
+                <p>iii. The reasons and benefits of the proposed amendment.</p>
+              <li>The executive committee shall review the proposal to ensure it aligns with the objectives and values of the chama.</li>
+            </ol>
+
+            <h3 id='Notification_to_Members'><span>7.4:</span>Notification to Members</h3>
+            <ol>
+              <li>The secretary shall circulate the proposed amendments to all members at least <b>14 days</b> before the meeting where they will be discussed.</li>
+              <li>The notification shall include:</li>
+                <p>i. A copy of the currrent section(s) of the constitution.</p>
+                <p>ii. The proposed amendment(s).</p>
+                <p>iii. The date, time and venue of the meeting.</p>
+            </ol>
+
+            <h3 id='Voting_on_Amendments'><span>7.5:</span>Voting on Amendments</h3>
+            <ol>
+              <li>Amendments shall only be adopted by a <b>two-thirds majority vote</b> of the members present at the meeting.</li>
+              <li>Voting shall be conducted by secret ballot unless members agree to vote by show of hands.</li>
+              <li>Each member shall have one vote and proxy votes are not allowed.</li>
+            </ol>
+
+            <h3 id='Effective_Date_of_Amendments'><span>7.6:</span>Effective Date of Amendments</h3>
+            <ol>
+              <li>Approved amendments shall take effect immediately unless otherwise specified in the resolution.</li>
+              <li>The secretary shall update the constitution to reflect the changes and distribute the revised constitution to all members within <b>30 days</b> of approval.</li>
+            </ol>
+
+            <h3 id='Record_Keeping'><span>7.7:</span>Record Keeping</h3>
+            <ol>
+              <li>The minutes of the meeting at which the amendment was adopted shall include:</li>
+                <p>i. The proposed changes.</p>
+                <p>ii. The number of members present and voting.</p>
+                <p>iii. The results of the vote.</p>
+              <li>The updated constitution shall include a revision history section, detailing:</li>
+                <p>i. The date of each amendment.</p>
+                <p>ii. A summary of the changes made.</p>
+            </ol>
+
+            <h3 id='Restrictions_on_Amendments'><span>7.8:</span>Restrictions on Amendments.</h3>
+            <ol>
+              <li>No amendment shall be made that contradicts the fundamental objectives of the chama or violates any national laws.</li>
+              <li>Core provisions, such as those governing membership, financial integrity and emergency funds, may require a higher threshold of <b>three-quarters majority vote</b> for amendment.</li>
+            </ol>
+
+            <h3 id='Review_Period'><span>7.9:</span>Review Period and Dispute Resolution</h3>
+            <ol>
+              <li>The chama's constitution shall be reviewed after every <b>two years</b> to ensure its provisions remain relevant.</li>
+              <li>During the review period, members are encouraged to submit suggestions for consideration.</li>
+              <li>Any disputes arising from proposed amendments shall be referred to an arbitration committee composed of impartial members selected by the chama.</li>
+              <li>The committee's decision shall be binding, subject to approval by the AGM or SGM.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 id='Dissolutioin'><span>Article 8:</span>Dissolution</h2>
+            <p id='underline'><span></span></p>
+
+            <h3 id='Dissolution_Purpose'><span>8.1:</span>Purpose</h3>
+            <p className='main-content'>
+              This article outlines the process and conditions under which the chama may be dissolved and the subsequent distribution of assets and liabilities.
+            </p>
+
+            <h3 id='Grounds_for_Dissolution'><span>8.2:</span>Grounds for Dissolution</h3>
+            <p className='main-content'>The chama may be dissolved under the following circumstances:</p>
+            <ol>
+              <li>When the chama's objectives can no longer be achieved.</li>
+              <li>By a resolution passed by at least <b>three quarters</b> of all members in good standing during a Special General Meeting(SGM) convened specifically for this purpose.</li>
+              <li>When the chama becomes insolvent and is unable to meet its financial obligations.</li>
+            </ol>
+
+            <h3 id='Notice_of_Dissolution'><span>8.3:</span>Notice of Dissolution</h3>
+            <ol>
+              <li>A proposal for dissolution must be submitted in writing to the executive committee at least <b>60 days</b> before the SGM.</li>
+              <li>The secretary shall notify all members of the proposal and the meeting date at least <b>30 days</b> in advance.</li>
+            </ol>
+
+            <h3 id='Process_of_Dissolution'><span>8.4:</span>Process of Dissolution</h3>
+            <ol>
+              <li>The resolution for dissolution must be adopted by <b>three-quarters majority vote</b> of members present at the SGM.</li>
+              <li>Upon adoption of the resolution, the executive committee shall oversee the dissolution process, including:</li>
+                <p>i. Settling all outstanding debts and liabilities.</p>
+                <p>ii. Liquidating assets where necessary.</p>
+                <p>iii. Distributing any remaining funds equitably among members based on their contributions and savings.</p>
+            </ol>
+
+            <h3 id='Distribution_of_Assets'><span>8.5:</span>Distribution of Assets</h3>
+            <ol>
+              <li>All assets and funds remaining after settling liabilities shall be distributed as follows:</li>
+                <p>i. Emergency funds and savings shall be refunded to members.</p>
+                <p>ii. Group profits or reserves shall be distributed according to <b>Article 5, Sub-Article 5.2, Sub-Sub-Article 5.2.1</b> of this constitution</p>
+              <li>Any funds held for specific projects or initiatives shall be redirected or refunded based on a resolution by members.</li>
+            </ol>
+
+            <h3 id='Final_Record_Keeping'><span>8.6:</span>Final Record Keeping</h3>
+            <ol>
+              <li>The treasurer shall prepare a final financial report detailing the distribution of assets and settlement of liabilities.</li>
+              <li>The secretary shall archive all records for future reference.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 id='Adoption'><span>Article 9:</span>Adoption</h2>
+            <p id='underline'><span></span></p>
+
+            <h3 id='Adoption_Purpose'><span>9.1:</span>Purpose</h3>
+            <p className='main-content'>
+              This article governs the formal adoption of the constitution, ensuring that all members agree to abide by its provisions.
+            </p>
+
+            <h3 id='Approval_of_the_Constitution'><span>9.2:</span>Approval of the Constitution</h3>
+            <ol>
+              <li>The constitution shall be adopted by a <b>two-thirds majority vote</b> of members present during the founding meeting or AGM.</li>
+              <li>Only members who are in good standing shall participate in the voting process.</li>
+            </ol>
+
+            <h3 id='Declaration_of_Adoption'><span>9.3:</span>Declaration of Adoption</h3>
+            <ol>
+              <li>Upon approval, the chairperson shall formally declare the constitution adopted, and it shall take effect immediately unless otherwise specified.</li>
+              <li>All members shall sign a declaration of commitment to abide by the constitution.</li>
+            </ol>
+
+
+          </section>
         </div>
     </div>
   )
