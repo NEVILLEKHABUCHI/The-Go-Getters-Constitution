@@ -179,7 +179,7 @@
 @media only screen and (max-width: 900px) {
   .containerTop {
     width: 99vw;
-    height: 12vh;
+    height: max-content;
     display: flex;
     gap: 1vh;
     flex-direction: column-reverse;
