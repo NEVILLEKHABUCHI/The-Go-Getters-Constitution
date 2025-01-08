@@ -90,7 +90,7 @@ function ContainerBody({showContainerLeft,setShowContainerLeft}){
       ]
     },
     {
-      mainLink:{text: "Farewell Support",href: '#Farewell_Support'},
+      mainLink:{text: "Farewell Support and Financial Support",href: '#Farewell_Support'},
       subLinks: [
         {text:"Purpose",href: "#Farewell_Purpose"},
         {text:"Amount per support",href: "#Amount_Per_Support"},
@@ -266,14 +266,14 @@ function ContainerRight({setShowContainerLeft}){
                 <ol>
                   <li><b>Failure to Meet Financial Obligations:</b> Persistent failure to pay loans, fines or contributions after multiple reminders and warnings.</li>
                   <li><b>Violation of the Constitution:</b> Breaching key provisions of the constitution or engaging in activities that harm the reputation or objectives of the chama.</li>
-                  <li><b>Non-Attendance:</b> Missing <b>seven consecutive meetings</b> without valid reasons and failing to comply with penalties imposed.</li>
+                  <li><b>Non-Attendance:</b> Missing <b>three consecutive meetings</b> without valid reasons and failing to comply with penalties imposed.</li>
                 </ol>
               <li><b>Process of Termination of Membership:</b></li>
                 <p>i. For <b>involuntary loss of membership</b>, the matter shall be reviewed by the executive committee and the member will be given an opportunity to present their defence.</p>
                 <p>ii. A resolution to terminate membership must be passed by a majority vote of the executive committee and ratified by members during the next meeting.</p>
                 <p>iii. A <b>voluntary loss of membership</b> shall only be accepted at the end of a merry-go-round.</p>
               <li><b>Refund of Savings and Contributions:</b></li>
-                <p>i. Upon withdrawal or termination, the member is entitled to a refund of their savings and other contributions, less any outstanding debts, fines or penalties, within <b>60 days</b> of their exit.</p>
+                <p>i. Upon withdrawal or termination, the member is entitled to a refund of their savings and other contributions, less any outstanding debts, fines or penalties, <b>on exiting</b>.</p>
               <li><b>Reinstatement of Membership:</b></li>
                 <p>A former member may apply for reinstatement by submitting a written request and fulfilling the conditions for joining as a new member.</p>
               </ol>
@@ -305,6 +305,7 @@ function ContainerRight({setShowContainerLeft}){
                 <li>Ensure adherence to the constitution and policies.</li>
                 <li>Represent the group in external matters.</li>
                 <li>Provide leadership and strategic direction.</li>
+                <li>  Prepare Meeting Agendas.</li>
               </ol>
 
               <p className='main-content'>
@@ -315,7 +316,7 @@ function ContainerRight({setShowContainerLeft}){
                 <li>Assume the role of the chairperson in his/her absence.</li>
                 <li>Prepare meeting agendas.</li>
                 <li>Oversee and manage register records.</li>
-                <li>Approve special loans.</li>
+                <li>Approve loans.</li>
                 <li>Monitor group goals.</li>
               </ol>
 
@@ -343,49 +344,49 @@ function ContainerRight({setShowContainerLeft}){
 
               <h4 id='Election_of_Officers'><span>3.3.1:</span>Election of Officers</h4>
               <ol>
-                  <li>Elections for the leadership positions within the chama shall be held after two years during the Annual General Meeting[AGM]</li>
+                  <li>Elections for the leadership positions within the chama shall be held after <b>two years</b> during the Annual General Meeting[AGM]</li>
                   <li>The positions subject to election shall include, but are not limited to, the Chairperson,Vice-Chairperson, Secretary and the treasurer.</li>
                   <li>All members in good standing are eligible to run for any office.</li>
               </ol>
 
               <h4 id='Nomination_Process'><span>3.3.2:</span>Nomination Process</h4>
               <ol>
-                <li>Nominations for each position shall be submitted in writing to the Secretary at least two weeks before the AGM.</li>
-                <li>Each nomination must be seconded by at least one other member.</li>
-                <li>A list of all nominees shall be circulated to the membership one week before the AGM.</li>
+                <li>Nominations for each position shall be submitted in writing to the Secretary at least <b>two weeks</b> before the AGM.</li>
+                <li>Each nomination must be seconded by at least <b>one</b> other member.</li>
+                <li>A list of all nominees shall be circulated to the membership <b>one week</b> before the AGM.</li>
               </ol>
 
               <h4 id='Voting_Procedure'><span>3.3.3:</span>Voting Procedure</h4>
               <ol>
-                <li>Voting shall be conducted by secret ballot during the AGM.</li>
-                <li>Each member shall have one vote per position.</li>
+                <li>Voting shall be conducted by <b>secret ballot</b> during the AGM.</li>
+                <li>Each member shall have <b>one vote per position</b>.</li>
                 <li>The candidate receiving the highest number of votes for each position shall be declared elected.</li>
                 <li>In the event of a tie, a runoff election shall be held between the tied candidates.</li>
               </ol>
 
               <h4 id='Assumption_of_Office'><span>3.3.4:</span>Assumption of Office</h4>
               <ol>
-                <li>Newly elected officers shall assume their roles immediately following the conclusion of the AGM.</li>
-                <li>Outgoing officers shall ensure a smooth transition by providing all necessary documentation and briefings to the incoming officers within two weeks of the election.</li>
+                <li>Newly elected officers shall assume their roles <b>immediately</b> following the conclusion of the AGM.</li>
+                <li>Outgoing officers shall ensure a smooth transition by providing all necessary documentation and briefings to the incoming officers <b>within two weeks</b> of the election.</li>
               </ol>
 
               <h4 id='Term_of_Office'><span>3.3.5:</span>Term of Office</h4>
               <ol>
-                <li>The term of office for all elected positions shall be two years.</li>
-                <li>Officers may be re-elected for consecutive terms without limitation.</li>
+                <li>The term of office for all elected positions shall be <b>two years</b></li>
+                <li>Officers may be re-elected for consecutive terms without <b>limitation</b>.</li>
               </ol>
 
               <h4 id='Vacancies'><span>3.3.6:</span>Vacancies</h4>
               <ol>
-                <li>In the event of a vacancy in any elected position, a special election shall be held at the next regular meeting to fill the position for the remainder of the term.</li>
+                <li>In the event of a vacancy in any elected position, a special election shall be held at the <b>next regular meeting</b> to fill the position for the remainder of the term.</li>
                 <li>Nominations for the special election shall follow the same process as regular elections.</li>
               </ol>
 
               <h4 id='Resignation'><span>3.3.7:</span>Resignation</h4>
               <ol>
-                <li>Any officer may resign from their position by submitting a written notice to the Secretary.</li>
-                <li>The resignation shall take effect immediately upon receipt of the notice unless a later date is specified in the resignation letter.</li>
-                <li>In the event of a resignation, the position shall be considered vacant and a special election shall be conducted in accordance with Section 6 of Article 3 to fill the vacancy. </li>
+                <li><b>Any officer</b> may resign from their position by submitting a written notice to the <b>secretary</b>.</li>
+                <li>The resignation shall take effect <b>immediately</b> upon receipt of the notice unless a later date is specified in the resignation letter.</li>
+                <li>In the event of a resignation, the position shall be considered vacant and a special election shall be conducted in accordance with <b>Section 6 of Article 3</b> to fill the vacancy. </li>
               </ol>
 
               <h3 id='Loss_of_Leadership'><span>3.4:</span>Loss of Leadership</h3>
@@ -430,7 +431,7 @@ function ContainerRight({setShowContainerLeft}){
                 </ol>
                 <li><b>Investigation:</b></li>
                 <ol>
-                  <li>The executive commmittee (excluding the accused leader) shall appoint an impartial panel to investigate the claims.</li>
+                  <li>The executive commmittee (<b>excluding the accused leader</b>) shall appoint an impartial panel to investigate the claims.</li>
                   <li>The leader in question shall be given an oppportunity to respond to the allegations in writing or in person.</li>
                 </ol>
                 <li><b>Resolution Meeting:</b></li>
@@ -441,7 +442,7 @@ function ContainerRight({setShowContainerLeft}){
                 <li><b>Voting Process:</b></li>
                 <ol>
                   <li>A leader shall be removed if at least <b>two-thirds of the members present</b> vote in favour of their removal.</li>
-                  <li>Voting shall be conducted by secret ballot to ensure fairness.</li>
+                  <li>Voting shall be conducted by <b>secret ballot</b> to ensure fairness.</li>
                 </ol>
                 <li><b>Immediate Effects of Removal:</b></li>
                 <p>Upon removal, the leader must:</p>
@@ -482,41 +483,41 @@ function ContainerRight({setShowContainerLeft}){
                 <b>Annual General Meeting[AGM]:</b>
               </p>
               <ol>
-                <li>The AGM shall be held once a year.</li>
+                <li>The AGM shall be held <b>once a year</b>.</li>
                 <li>The purpose of the AGM is to elect officers, review the financial status, review the set goals for that particular year, set goals for the coming year 
                   and discuss the overall progress of the chama.
                 </li>
-                <li>Notice of the AGM shall be given to all members at least four weeks in advance.</li>
+                <li>Notice of the AGM shall be given to all members at least <b>four weeks</b> in advance.</li>
               </ol>
 
               <p className='main-content'>
                 <b>Regular Meetings:</b>
               </p>
               <ol>
-                <li>Regular meetings shall be held on the 10th of every month.</li>
+                <li>Regular meetings shall be held on the <b>10th of every month</b>.</li>
                 <li>The purpose of the regular meetings is to discuss ongoing activities, financial contributions and any other matters arising.</li>
-                <li>Notice of regular meetings shall be given to all members at least one week in advance.</li>
+                <li>Notice of regular meetings shall be given to all members at least <b>three days</b> in advance.</li>
               </ol>
 
               <p className='main-content'>
                 <b>Special Meetings:</b>
               </p>
               <ol>
-                <li>Special meetings may be called by the Chairperson or by a written request from at least one-third of the members.</li>
+                <li>Special meetings may be called by the <b>Chairperson</b> or by a <b>written request</b> from at least <b>one-third</b> of the members.</li>
                 <li>The purpose of special meetings is to address urgent or specific issues that cannot wait until the next regular meeting.</li>
-                <li>Notice of special meetings shall be given to all members at least three days in advance.</li>
+                <li>Notice of special meetings shall be given to all members at least <b>three days</b> in advance.</li>
               </ol>
 
               <h3 id='Quorum'><span>4.2:</span>Quorum</h3>
               <ol>
-                <li>A quorum of any meeting shall consist of at least one-half of the total membership.</li>
-                <li>No official business shall be conducted without a quorum present.</li>
+                <li>A quorum of any meeting shall consist of at least <b>one-half</b> of the total membership.</li>
+                <li>No official business <b>shall</b> be conducted without a quorum present.</li>
               </ol>
 
               <h3 id='Agendas'><span>4.3:</span>Agendas</h3>
               <ol>
-                <li>The agendas of each meeting shall be prepared by the Vice-Chairperson in consultation with the Chairperson.</li>
-                <li>The agendas shall be circulated to all members at least three days before a regular or special meeting and four weeks before the AGM.</li>
+                <li>The agendas of each meeting shall be prepared by the Chairperson.</li>
+                <li>The agendas shall be circulated to all members at least <b>three days</b> before a regular or special meeting and <b>four weeks</b> before the AGM.</li>
               </ol>
 
               <h3 id='Conduct_of_Meetings'><span>4.4:</span>Conduct of Meetings</h3>
@@ -536,7 +537,7 @@ function ContainerRight({setShowContainerLeft}){
 
               <h3 id='Attendance'><span>4.6:</span>Attendance</h3>
               <ol>
-                <li>Members are expected to attend all meetings.</li>
+                <li>Members are expected to attend <b>all meetings</b>.</li>
                 <li>Any member who is unable to attend a meeting shall notify the group in advance, providing a valid reason for their absence.</li>
                 <li>Persistent absenteeism without valid reason may lead to disciplinary action as stated in article 5 of this constitution.</li>
               </ol>
@@ -561,7 +562,8 @@ function ContainerRight({setShowContainerLeft}){
             </p>
             <ol>
               <li>Members shall contribute a fixed amount of money regularly as per the schedule agreed at the start of each financial period.</li>
-              <li>Contribution amounts and intervals shall be determined by a majority vote during the Annual General Meeting. </li>
+              <li>Contribution amounts and intervals shall be determined by a <b>majority vote</b> during the Annual General Meeting. </li>
+              <li>Merry-Go-Round contributions are <b>mandatory</b> for all members.</li>
               <li>The treasurer shall record all contributions in the chama ledger, noting the date and contributing member.</li>
             </ol>
 
@@ -571,8 +573,8 @@ function ContainerRight({setShowContainerLeft}){
             <ol>
               <li>Members shall contribute a predetermined amount regularly to build the emergency fund.</li>
               <li>The contribution amount shall be set during a general meeting and reviewed periodically to reflect chama's financial capacity and needs.</li>
-              <li>Emergency fund contributions are mandatory for all members.</li>
-              <li>Emergency funds shall be contributed together with the merry-go-round.</li>
+              <li>Emergency fund contributions are <b>mandatory</b> for all members.</li>
+              <li>Emergency funds shall be contributed <b>together</b> with the merry-go-round.</li>
             </ol>
 
             <p className='main-content'>
@@ -625,14 +627,17 @@ function ContainerRight({setShowContainerLeft}){
                 <li>Members can apply for loans based on their individual financial needs.</li>
                 <li>Members can borrow up to <b>50%</b> of their total savings and contributions to the emergency fund.</li>
                 <li>Loan applications must be approved by the executive committee or during a general meeting.</li>
-                <li>Borrowers must be in good standing, with no outstanding loans, fines or overdue contributions.</li>
+                <li>Borrowers <b>must</b> be in good standing, with no outstanding loans, fines or overdue contributions.</li>
+                <li>A loan amount of between <b>One Hundred Shillings</b> and <b>Five Hundred Shillings</b><b>[100/= - 500/=] must</b> be paid within <b>a month</b>.</li>
+                <li>A loan amount of between <b>Five Hundred and Fifty Shillings</b> and <b>One Thousand Shillings [550/= - 1000/=]</b> must be paid within <b>two months</b>.</li>
+                <li>A loan amount of <b>more</b> than <b>One Thousand and Fifty Shillings [1050/=]</b> must be paid within <b>three months.</b></li>
               </ol>
             </p>
 
             <p className='main-content'>
               <b>2. Compulsory Loans:</b>
               <ol>
-                <li>The Go-Getters may offer loans where every member is required to take the same amount of loan.</li>
+                <li>The Go-Getters may offer loans where every member is required to take the <b>same</b> amount of loan.</li>
                 <li>Distribution shall be done in small groups (e.g. groups of 2 or 3 members) to manage risk and ensure fairness.</li>
                 <li>The loan amount and duration shall be determined by the Go-Getters at the beginning of the loan cycle.</li>
               </ol>
@@ -650,7 +655,6 @@ function ContainerRight({setShowContainerLeft}){
             <p className='main-content'>
               <b>2. Penalties for Delayed Payments:</b>
               <ol>
-                <li>Members are allowed a grace period of <b>three months</b> to settle outstanding loan repayments.</li>
                 <li>If a member fails to pay their loan within the specified period, an <b>interest rate of 15%</b> shall be charged for each month the loan remains unpaid beyond the grace period.</li>
               </ol>
             </p>
@@ -671,7 +675,7 @@ function ContainerRight({setShowContainerLeft}){
 
                 <li>Termination of Membership:</li>
                 <p>i. Persistent non-compliance may result in the termination of the member's membership.</p>
-                <p>ii.  Upon termination, the member shall forfeit certain rights, including access to the emergency fund or ongoing project benefits.</p>
+                <p>ii.  Upon termination, the member <b>shall</b> forfeit certain rights, including <b>access</b> to the emergency fund or <b>ongoing</b> project benefits.</p>
                 <p>iii. Any remaining debts shall still be recoverable by the chama.</p>
               </ol>
             </p>
@@ -726,7 +730,7 @@ function ContainerRight({setShowContainerLeft}){
           </section>
 
           <section>
-            <h2 id='Farewell_Support'><span>Article 6:</span>Farewell Support</h2>
+            <h2 id='Farewell_Support'><span>Article 6:</span>Farewell and Financial Support</h2>
             <p id='underline'><span></span></p>
 
             <h3 id='Farewell_Purpose'><span>6.1:</span>Purpose</h3>
@@ -738,15 +742,16 @@ function ContainerRight({setShowContainerLeft}){
             <h3 id='Amount_Per_Support'><span>6.2:</span>Amount Per Support</h3>
             <ol>
               <li><b>Loss of a Member:</b> A contribution of <b>Five Hundred Shillings[500/=]</b> is withdrawn from each member's emergency fund.</li>
-              <li><b>Loss of a Parent:</b> A contribution of <b>Two Hundred Shillings[200/=]</b> is withdrawn from each member's emergency fund.</li>
-              <li><b>Loss of a Sibling:</b> A contribution of <b>One Hundred and Fifty[150/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Loss of a Parent:</b> A contribution of <b>One Thousand Shillings[1000/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Loss of a Sibling:</b> A contribution of <b>Three Hundred[300/=]</b> is withdrawn from each member's emergency fund.</li>
+              <li><b>Graduation of Members:</b> Each member <b>shall</b> be required to contribute <b>Two Hundred Shillings [200/=]</b></li>
               <li><b>Additional Support:</b> Any other support shall be voluntary, except in extreme cases where the chairperson may approve additional compulsory contributions.</li>
             </ol>
 
             <h3 id='Process'><span>6.3:</span>Process</h3>
             <ol>
               <li><b>Notification:</b></li>
-                <p>The affected member or their representative shall notify the chairperson or secretary of the bereavement immediately.</p>
+                <p>The affected member or their representative shall notify the <b>chairperson</b> or <b>secretary</b> of the bereavement immediately.</p>
               <li><b>Approval and Execution:</b></li>
                 <p>i. The chairperson shall confirm the eligibility of the claim and authorize the withdrawal of the specified amounts from members' emergency funds.</p>
                 <p>ii. The treasurer shall ensure timely collection and disbursement of funds to the affected party.</p>
@@ -781,7 +786,7 @@ function ContainerRight({setShowContainerLeft}){
 
             <h3 id='Authority_to_Amend'><span>7.2:</span>Authority to Amend</h3>
             <ol>
-              <li>Amendments to this constitution can only be made during an Annual General Meeting(AGM) or a Special General Meeting(SGM) convened for this purpose.</li>
+              <li>Amendments to this constitution <b>can only be made</b> during an Annual General Meeting(AGM) or a Special General Meeting(SGM) convened for this purpose.</li>
               <li>Only members in good standing (having no outstanding fines, loans or disciplinary actions) are eligible to participate in the amendment process.</li>
             </ol>
 
